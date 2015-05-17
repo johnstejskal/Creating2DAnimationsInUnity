@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour {
 			if(_isGrounded)
 			{
 				_isGrounded = false;
-				rigidbody2D.AddForce(new Vector2(0, 250)); //simple jump code using unity physics
+				GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 250)); //simple jump code using unity physics
 				changeState(STATE_JUMP);
 			}
 		}
